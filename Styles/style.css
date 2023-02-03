@@ -10,7 +10,6 @@
 */
 
 body{
-   
   background:#000;
 }
 
@@ -26,6 +25,17 @@ body{
     font-size: 10em;
     animation: effect 2s linear infinite;
 }
+
+
+
+.h1-topLeft{
+  font-size: 5em;
+  color: #ADB3BC;
+  animation: effect 2s linear infinite;
+}
+
+
+
 
 @keyframes effect {
   0% {
@@ -47,6 +57,25 @@ h1{
     text-align: center;
 }
 
+
+
+
+
+.button-topLeft{
+  position: absolute;
+  font-family: 'Freckle Face', sans-serif;
+  background-color: transparent;
+  top: 3em;
+  left: 5em;
+}
+
+.button-topLeft .h1-topLeft:hover{
+  border-radius: 10em;
+  background-color: white;
+  color:white;
+  -webkit-filter: blur(1px)
+}
+
 .father-div{
 
   width: 50%;
@@ -60,7 +89,7 @@ h1{
    
 }
 
-.cat{
+.circle1{
      background: transparent;
      width: 20em;
      height: 20em;
@@ -76,7 +105,7 @@ h1{
 
 
 
-.dog{
+.circle2{
     background: transparent;
     width: 20em;
     height: 20em;

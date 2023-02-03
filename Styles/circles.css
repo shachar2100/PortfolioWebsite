@@ -2,6 +2,7 @@
   display: grid;
   align: center;
   height: 33vh;
+  
 }
 
 .div-circle, ::before, ::after {
@@ -27,10 +28,13 @@
 }
 
 .loader::after {
-  padding: 1.5em;
+  padding: 1em;
   border-radius: 50%;
-  color: var(--grey);
-
+  background-color: rgb(117, 143, 173);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .loader::before {
@@ -39,7 +43,6 @@
 
 .loader::after {
   padding: 3em;
-  background: var(--grey);
   animation: mov 5s ease-in-out infinite;
   filter: blur(10px);
   content: "";

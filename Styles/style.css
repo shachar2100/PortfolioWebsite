@@ -1,29 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
-
 /*
     Color Pallet:
-    Purple Haze #BEAFC2
-    Purple #695E93
-    Violet #8155BA
-    Ebony #281C2D
+    Jet Black #050606
+    White #FDFDFD
+    Pewter #D8D7D5
+    Misty Blue #ADB3BC
     https://www.canva.com/colors/color-palettes/makeshift-slumber/
 */
 
+
+:root {
+  --black: #000;
+  --white: #FDFDFD;
+  --grey: #D8D7D5;
+  --blue: #ADB3BC;
+  --home-bg-color: var(--black);
+  --menu-bg-color: var(--grey);
+  --font-family: 'Freckle Face', sans-serif;
+}
+
+
 body{
-  background:#000;
+  background: var(--black);
 }
 
 .div-background {
     position: relative;
-    -webkit-filter: brightness(1.2) contrast(20);
-    background:#000;
+    /* -webkit-filter: brightness(1.2) contrast(20); */
+    background-color: transparent;
+    color: transparent;
 }
 
 .h1-title{
-    position: sticky;
+    /* position: sticky; */
+    margin-top: 10%;
     top: 50px;
-    font-size: 10em;
-    animation: effect 2s linear infinite;
+    font-size: 5em;
+    letter-spacing: 15px;
+    color: white;
+    margin-bottom: auto;
 }
 
 
@@ -31,10 +46,7 @@ body{
 .h1-topLeft{
   font-size: 5em;
   color: #ADB3BC;
-  animation: effect 2s linear infinite;
 }
-
-
 
 
 @keyframes effect {
@@ -51,116 +63,34 @@ body{
   }
 }
 
-h1{
+h1 {
     font-family: 'Freckle Face', sans-serif;
     color: transparent;
+    background-color: transparent;
     text-align: center;
 }
 
+h3 {
+  font-family: 'Freckle Face', sans-serif;
+  color: var(--black);
+  background-color: transparent;
+  text-align: center;
+  align-items: ;
 
-
-
+}
 
 .button-topLeft{
+  background: transparent;
+}
+
+
+#footer {
+  background: linear-gradient(0deg, var(--white)0%,var(--blue)  50%, var(--black) 80%);
+  border: none;
   position: absolute;
-  font-family: 'Freckle Face', sans-serif;
-  background-color: transparent;
-  top: 3em;
-  left: 5em;
-}
-
-.button-topLeft .h1-topLeft:hover{
-  border-radius: 10em;
-  background-color: white;
-  color:white;
-  -webkit-filter: blur(1px)
-}
-
-.father-div{
-
-  width: 50%;
-  height:500px;
-  margin: 0 auto;
-  padding-top:200px;
-  background-color: #000;
-  padding-left:40%;
-
- -webkit-filter: blur(20px)
-   
-}
-
-.circle1{
-     background: transparent;
-     width: 20em;
-     height: 20em;
-     border-radius: 20em;
-     -webkit-animation: updownright 15s infinite;
-     -webkit-border-radius: 20em;
-     -moz-border-radius: 20em;
-     -ms-border-radius: 20em;
-     -o-border-radius: 20em;
-}
-
-
-
-
-
-.circle2{
-    background: transparent;
-    width: 20em;
-    height: 20em;
-    border-radius: 20em;
-    -webkit-animation: updownlefty 15s infinite;
-    position:relative;
-    z-index:4;
-    -webkit-border-radius: 20em;
-    -moz-border-radius: 20em;
-    -ms-border-radius: 20em;
-    -o-border-radius: 20em;
-}
-
-@-webkit-keyframes updownlefty {
-    0%, 100% {
-      background: linear-gradient(
-        #FFF, #ADB3BC);
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        margin-left: -200px    ;
-      }
-            50% {
-              background: linear-gradient(
-                #FFF, #ADB3BC);
-              transform: translateY(-100px);
-              margin-left: -50px      ;
-              -webkit-transform: translateY(-100px);
-              -moz-transform: translateY(-100px);
-              -ms-transform: translateY(-100px);
-              -o-transform: translateY(-100px);
-      }  
-}
-
-@-webkit-keyframes updownright {
-      0%, 100% {
-        background: linear-gradient(
-        #FFF, #ADB3BC);
-          transform: translateY(0);
-          -webkit-transform: translateY(0);
-          -moz-transform: translateY(0);
-          -ms-transform: translateY(0);
-          -o-transform: translateY(0);
-          margin-left: 100px
-      }
-        50% {
-          background: linear-gradient(
-        #FFF, #ADB3BC);
-          transform: translateY(100px);
-          margin-left: -100px  ;
-          -webkit-transform: translateY(100px);
-          -moz-transform: translateY(100px);
-          -ms-transform: translateY(100px);
-          -o-transform: translateY(100px);
-      }
+  display: table-cell;
+  vertical-align: bottom;
+  bottom: 0;
+  width: 100%;
+  height: 3%;
 }

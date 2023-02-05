@@ -176,7 +176,7 @@
   font-weight: 800;
   display: inline-block;
   position: relative;
-  color: var(--grey);
+  color: var(--blue);
   transition: all 250ms linear;
 }
 .nav ul li a:hover{

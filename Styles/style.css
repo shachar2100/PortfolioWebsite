@@ -33,10 +33,9 @@ body{
 
 .h1-title{
     /* position: sticky; */
-    margin-top: 10%;
-    top: 50px;
-    font-size: 5em;
-    letter-spacing: 15px;
+    margin-top: 20vh;
+    font-size: 10vh;
+    letter-spacing: 3vh;
     color: white;
     margin-bottom: auto;
 }
@@ -45,8 +44,8 @@ body{
   font-family: 'Freckle Face', sans-serif;
   top: auto;
   text-align: center;
-  font-size: 2em;
-  letter-spacing: 10px;
+  font-size: 4.2vh;
+  letter-spacing: 1vh;
   color: var(--grey);
   margin-bottom: auto;
 }

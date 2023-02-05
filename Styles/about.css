@@ -1,0 +1,19 @@
+.h1-about {
+    margin-top: 20vh;
+    font-size: 10vh;
+    letter-spacing: 3vh;
+    color: var(--grey);
+    margin-bottom: auto;
+}
+
+.h3-about {
+    text-align: left;
+    color: var(--white);
+    font-size: 2vh;
+    margin-bottom: auto;
+}
+
+.div-h3-about {
+    display: grid;
+    justify-content: center;
+}

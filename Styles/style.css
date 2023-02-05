@@ -10,7 +10,7 @@
 
 
 :root {
-  --black: #000;
+  --black: #050606;
   --white: #FDFDFD;
   --grey: #D8D7D5;
   --blue: #ADB3BC;
@@ -31,12 +31,46 @@ body{
     color: transparent;
 }
 
+.button-topLeft{
+  position: fixed;
+  top: 30px;
+  left: 75px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 10;
+  color:transparent;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-color: black;
+}
+
+.h1-homeButton {
+
+  font-size: 7vh;
+  color: var(--grey);
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.h1-homeButton:hover {
+  color: var(--blue);
+  box-shadow: #ADB3BC;
+}
+
 .h1-title{
     /* position: sticky; */
     margin-top: 20vh;
     font-size: 10vh;
     letter-spacing: 3vh;
-    color: white;
+    color: var(--white);
     margin-bottom: auto;
 }
 
@@ -46,30 +80,13 @@ body{
   text-align: center;
   font-size: 4.2vh;
   letter-spacing: 1vh;
-  color: var(--grey);
+  color: var(--blue);
   margin-bottom: auto;
 }
-
-
 
 .h1-topLeft{
   font-size: 5em;
   color: #ADB3BC;
-}
-
-
-@keyframes effect {
-  0% {
-      background: linear-gradient(
-          #FFF, #ADB3BC);
-      -webkit-background-clip: text;
-  }
-
-  100% {
-      background: linear-gradient(
-        #FFF, #ADB3BC);
-      -webkit-background-clip: text;
-  }
 }
 
 h1 {
@@ -81,9 +98,11 @@ h1 {
 
 h3 {
   font-family: 'Freckle Face', sans-serif;
+  font-size: 2em;
   color: var(--black);
   background-color: transparent;
   text-align: center;
+  margin-top: auto;
 }
 
 .button-topLeft{
@@ -92,7 +111,7 @@ h3 {
 
 
 #footer {
-  background: linear-gradient(0deg, var(--white)0%,var(--blue)  50%, var(--black) 80%);
+  background: linear-gradient(var(--black) 10%, var(--blue)  80%);
   border: none;
   position: absolute;
   display: table-cell;

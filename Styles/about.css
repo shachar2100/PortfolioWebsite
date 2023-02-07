@@ -1,19 +1,46 @@
-.h1-about {
-    margin-top: 20vh;
-    font-size: 10vh;
-    letter-spacing: 3vh;
-    color: var(--grey);
-    margin-bottom: auto;
+body{
+    background: var(--black);
 }
-
+.h1-homeButton:hover {
+    color: var(--white);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
 .h3-about {
     text-align: left;
     color: var(--white);
-    font-size: 2vh;
+    font-size: 2.5vh;
     margin-bottom: auto;
+    border-color: var(--black);
+    margin-top: 1vh;
 }
 
 .div-h3-about {
     display: grid;
     justify-content: center;
+    /* background-color: var(--grey); */
+    opacity: 75%;
+    /* box-shadow: 2px 4px 5px 6px var(--white); */
+    /* border-radius: 1230vh;
+    -webkit-border-radius: 1230vh;
+    -moz-border-radius: 1230vh;
+    -ms-border-radius: 1230vh;
+    -o-border-radius: 1230vh; */
 }
+
+
+img {
+    min-width: auto;
+    max-width: 30rem;
+    /* opacity: 50%; */
+    margin-right: 10rem;
+    box-shadow:
+    -50px -50px 0 -40px var(--white),
+    50px 50px 0 -40px var(--white);
+}
+
+

@@ -1,0 +1,29 @@
+.container-resume{
+    margin-top: 5%;
+    width: 50%;
+    height: 60vh;
+    background:var(--grey);
+    box-shadow:0 0 40px -10px var(--grey);
+    /* margin:calc(12vh - 220px) auto; */
+    padding:20px 30px;
+    /* max-width:calc(200vw - 40px); */
+    /* box-sizing:border-box; */
+    font-family: var(--font-family);
+    position: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+}
+
+
+
+
+.resume-title {
+    color: var(--blue);
+    size: 10vh;
+    text-decoration: underline;
+}

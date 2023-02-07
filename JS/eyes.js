@@ -1,8 +1,13 @@
+document.querySelector("body").addEventListener("mousemove", eyeball);
 
-const eye = document.querySelector('.iris');
+function eyeball() {
+  const eye = document.querySelectorAll(".eyes");
+  eye.forEach(function (eye) {
+    let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+    let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
 
-window.addEventListener('mousemove', (event) => {
-    const x = -(window.innerWidth / 2 - event.pageX) / 35;
-    const y = -(window.innerHeight / 2 - event.pageY) / 35;
-    eye.style.transform = `rotate(-45deg) translateY(${y}px) translateX(${x}px)`;         
-}); 
+    let radian = Math.atan2(event.pageX - x, event.pageY - y);
+    let rotate = radian * (180 / Math.PI) * -1 + 270;
+    eye.style.transform = "rotate(" + rotate + "deg)";
+  });
+}
